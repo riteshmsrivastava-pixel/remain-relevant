@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>REMAIN RELEVANT™ · The AI Masterclass for non-technical decision-makers</title>
+<meta name="description" content="Understand AI. Transform with confidence. A free, invitation-only AI masterclass for non-technical decision-makers in Boston. No jargon. No judgment. No laptops.">
+<meta property="og:title" content="REMAIN RELEVANT™ · The AI Masterclass for non-technical decision-makers">
+<meta property="og:description" content="Understand AI. Transform with confidence. Free, invitation-only, 12 seats, Boston. No jargon. No judgment. No laptops.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth}
+  *{box-sizing:border-box}
+  body{margin:0;background:#ffffff;color:#2b3034;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  ::selection{background:#c7cfd3;color:#2b3034}
+  a{color:#2b3034}
+
+  .mono{font-family:'IBM Plex Mono',monospace}
+  .wrap{max-width:1120px;margin:0 auto}
+
+  /* The wordmark · always all caps, always mono, always letterspaced */
+  .mark{font-family:'IBM Plex Mono',monospace;font-weight:500;letter-spacing:0.32em;color:#9aa3a8;white-space:nowrap;text-decoration:none}
+  .mark .ai{color:#d84a37;font-weight:600}
+  .mark sup{font-size:50%;letter-spacing:0;vertical-align:super}
+
+  /* Framework badge */
+  .badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#d84a37;text-transform:uppercase}
+
+  /* Eyebrow pill */
+  .eyebrow{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#8a9298;border:1px solid #dde1e4;border-radius:999px;padding:6px 15px}
+
+  /* Nav */
+  nav.bar{position:sticky;top:16px;z-index:50;padding:0 16px}
+  .bar-inner{max-width:1120px;margin:0 auto;background:rgba(255,255,255,0.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(43,48,52,0.08);border-radius:999px;padding:9px 12px 9px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{font-size:12.5px}
+  .nav-links{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+  .nav-link{text-decoration:none;color:#5b666d;font-size:14px;font-weight:500;transition:color .18s}
+  .nav-link:hover{color:#2b3034}
+  .nav-cta{text-decoration:none;background:#2b3034;color:#ffffff;font-size:14px;font-weight:500;padding:10px 20px;border-radius:999px;white-space:nowrap;transition:background .18s}
+  .nav-cta:hover{background:#4f5a61;color:#fff}
+
+  /* Buttons */
+  .btn-light{text-decoration:none;display:inline-block;background:#ffffff;color:#2b3034;font-size:16px;font-weight:600;padding:15px 32px;border-radius:999px;white-space:nowrap;transition:background .18s,color .18s}
+  .btn-light:hover{background:#2b3034;color:#ffffff}
+  .btn-ghost{display:inline-block;font-size:14px;font-weight:500;color:#2b3034;text-decoration:none;border:1px solid #c8ced2;border-radius:999px;padding:11px 22px;transition:background .18s,color .18s,border-color .18s}
+  .btn-ghost:hover{background:#2b3034;color:#ffffff;border-color:#2b3034}
+
+  .foot-link{font-size:15px;color:#2b3034;text-decoration:none;transition:color .18s}
+  .foot-link:hover{color:#5b666d}
+
+  /* On narrow screens keep the nav pill compact: brand + CTA only */
+  @media (max-width:720px){
+    .nav-links .nav-link{display:none}
+    .brand{font-size:10.5px}
+    .nav-cta{font-size:13px;padding:9px 14px}
+    .bar-inner{padding:8px 8px 8px 16px}
+  }
+
+  /* Sections */
+  section{scroll-margin-top:90px}
+  .pad{padding:clamp(72px,9vw,120px) 32px}
+
+  /* Agenda rows */
+  .q-row{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:22px 0;border-top:1px solid rgba(255,255,255,0.16)}
+  .q-num{font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,0.55);font-size:14px;padding-top:4px}
+  .q-row h3{font-weight:500;font-size:clamp(18px,2.2vw,22px);color:#ffffff;margin:0 0 5px 0;letter-spacing:-0.01em}
+  .q-row p{margin:0;font-size:15px;line-height:1.55;color:#b9c1c6;max-width:62ch}
+
+  /* Kit cards */
+  .kit-card{background:#ffffff;border:1px solid #e7eaec;border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:9px}
+  .kit-card .num{font-family:'IBM Plex Mono',monospace;color:#9aa3a8;font-size:12px;letter-spacing:0.06em}
+  .kit-card h3{font-weight:600;font-size:18px;color:#2b3034;margin:0;letter-spacing:-0.01em}
+  .kit-card p{margin:0;font-size:14.5px;line-height:1.55;color:#6c757b}
+
+  /* Form */
+  .field-label{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a9298}
+  .field{background:#ffffff;border:1px solid #dde1e4;color:#2b3034;padding:14px 15px;font-size:15px;font-family:'Hanken Grotesk',sans-serif;border-radius:10px;outline:none;width:100%;transition:border-color .16s}
+  .field:focus{border-color:#6b767d}
+  select.field{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%238a9298' stroke-width='1.5'/></svg>");background-repeat:no-repeat;background-position:right 15px center}
+  label.stack{display:flex;flex-direction:column;gap:9px}
+
+  .submit-btn{background:#2b3034;color:#ffffff;font-size:16px;font-weight:600;padding:16px 34px;border:none;border-radius:999px;cursor:pointer;font-family:'Hanken Grotesk',sans-serif;align-self:flex-start;white-space:nowrap;transition:background .18s}
+  .submit-btn:hover{background:#4f5a61}
+  .submit-btn:disabled{opacity:.6;cursor:default}
+
+  /* Book cover placeholder · the book keeps its own lowercase dress (the one licensed exception) */
+  .cover{width:150px;height:225px;flex-shrink:0;border-radius:6px;box-shadow:0 18px 40px rgba(40,52,62,0.18);background:linear-gradient(155deg,#2b3034 0%,#454f56 60%,#5b666d 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:16px 14px;color:#fff}
+  .cover .ai{color:#d84a37}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV (floating pill) ===== -->
+<nav class="bar">
+  <div class="bar-inner">
+    <a href="#top" class="mark brand">REM<span class="ai">AI</span>N RELEVANT<sup>™</sup></a>
+    <div class="nav-links">
+      <a href="#masterclass" class="nav-link">The masterclass</a>
+      <a href="#kit" class="nav-link">The decision file</a>
+      <a href="#teacher" class="nav-link">Who teaches</a>
+      <a href="#invite" class="nav-cta">Request an invitation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header id="top" style="margin-top:-74px;background:linear-gradient(118deg,#79868e 0%,#98a3a9 52%,#bcc4c8 100%);min-height:92vh;display:flex;align-items:center">
+  <div class="wrap" style="padding:130px 32px 72px 32px;width:100%">
+    <span class="eyebrow" style="color:rgba(255,255,255,0.9);border-color:rgba(255,255,255,0.4)">A private seminar · Boston</span>
+    <h1 style="font-weight:400;margin:26px 0 0 0;color:#ffffff;letter-spacing:-0.02em"><span style="display:block;font-size:clamp(26px,3.6vw,42px);line-height:1.15;font-weight:400;color:rgba(255,255,255,0.92)">Understand AI.<br>Transform with confidence.</span><span class="mark" style="display:block;font-size:clamp(19px,5.4vw,66px);line-height:1.2;letter-spacing:0.34em;margin-top:18px;color:rgba(255,255,255,0.58)">REM<span class="ai">AI</span>N RELEVANT<sup>™</sup></span></h1>
+    <p style="font-size:clamp(16px,1.9vw,19px);line-height:1.6;color:rgba(255,255,255,0.85);max-width:58ch;margin:30px 0 0 0;text-wrap:pretty">The AI Masterclass for non-technical decision-makers.<br>No jargon. No judgment. No laptops.<br>Taught by an operator who has run AI at a fintech unicorn, in heavy manufacturing, and inside a Fortune&nbsp;500.</p>
+    <div style="margin-top:36px;display:flex;flex-direction:column;align-items:flex-start;gap:14px">
+      <a href="#invite" class="btn-light">Request an invitation</a>
+      <p class="mono" style="font-size:12px;color:rgba(255,255,255,0.8);margin:0;letter-spacing:0.08em">Free · Invitation-only · 12 seats · Boston</p>
+    </div>
+  </div>
+</header>
+
+<!-- ===== THE PROBLEM ===== -->
+<section style="background:#ffffff">
+  <div class="wrap pad">
+    <span class="eyebrow" style="margin-bottom:44px">The problem</span>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:0;letter-spacing:-0.01em">Every board meeting now has <span style="color:#aeb6bb">an AI question.</span></p>
+      <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:0;letter-spacing:-0.01em">Every vendor <span style="color:#aeb6bb">claims AI.</span></p>
+      <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:0;letter-spacing:-0.01em">Nobody explains it in plain language, <span style="color:#aeb6bb">or tells you what not to do.</span></p>
+    </div>
+    <p class="mono" style="margin:44px 0 0 0;font-size:12.5px;letter-spacing:0.08em;line-height:1.8;color:#8a9298;border-top:1px solid #e7eaec;padding-top:24px;max-width:64ch">91% OF C-SUITE EXECUTIVES ADMIT TO PRETENDING TO KNOW MORE ABOUT AI THAN THEY DO · PLURALSIGHT, 2025</p>
+  </div>
+</section>
+
+<!-- ===== THE PROMISE ===== -->
+<section style="background:#fafbfc;border-top:1px solid #eceef0">
+  <div class="wrap pad">
+    <span class="eyebrow" style="margin-bottom:26px">The promise</span>
+    <h2 style="font-weight:400;font-size:clamp(26px,3.6vw,44px);line-height:1.16;color:#2b3034;margin:0;max-width:30ch;letter-spacing:-0.02em">By 1:45 you will understand AI well enough to explain it to your board, question a vendor about it, and decide about it. <span style="color:#aeb6bb">Without becoming technical.</span></h2>
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border-top:1px solid #e7eaec">
+      <div style="padding:24px 28px 24px 0;border-bottom:1px solid #e7eaec;display:flex;gap:18px;align-items:baseline"><span class="mono" style="color:#9aa3a8;font-size:13px">[1]</span><p style="margin:0;font-size:18px;line-height:1.45;color:#2b3034">Whether you actually need it</p></div>
+      <div style="padding:24px 28px 24px 0;border-bottom:1px solid #e7eaec;display:flex;gap:18px;align-items:baseline"><span class="mono" style="color:#9aa3a8;font-size:13px">[2]</span><p style="margin:0;font-size:18px;line-height:1.45;color:#2b3034">What it should cost, and whether it will pay</p></div>
+      <div style="padding:24px 28px 24px 0;border-bottom:1px solid #e7eaec;display:flex;gap:18px;align-items:baseline"><span class="mono" style="color:#9aa3a8;font-size:13px">[3]</span><p style="margin:0;font-size:18px;line-height:1.45;color:#2b3034">Whether you're ready</p></div>
+      <div style="padding:24px 28px 24px 0;border-bottom:1px solid #e7eaec;display:flex;gap:18px;align-items:baseline"><span class="mono" style="color:#9aa3a8;font-size:13px">[4]</span><p style="margin:0;font-size:18px;line-height:1.45;color:#2b3034">How to stay on the right side of coming regulation</p></div>
+      <div style="padding:24px 28px 24px 0;border-bottom:1px solid #e7eaec;display:flex;gap:18px;align-items:baseline"><span class="mono" style="color:#9aa3a8;font-size:13px">[5]</span><p style="margin:0;font-size:18px;line-height:1.45;color:#2b3034">How to see through vendor claims</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE MASTERCLASS (ELEVEN QUESTIONS) ===== -->
+<section id="masterclass" style="background:#ffffff">
+  <div class="wrap pad">
+    <div style="background:linear-gradient(152deg,#333c42 0%,#4c575e 58%,#67727a 100%);border-radius:24px;padding:clamp(40px,6vw,72px)">
+      <span class="eyebrow" style="color:rgba(255,255,255,0.75);border-color:rgba(255,255,255,0.28);margin-bottom:26px">The masterclass</span>
+      <h2 style="font-weight:400;font-size:clamp(28px,4vw,48px);line-height:1.12;color:#ffffff;margin:0 0 10px 0;max-width:24ch;letter-spacing:-0.02em">Eleven questions. <span style="color:rgba(255,255,255,0.5)">Your order, not the industry's.</span></h2>
+      <p class="mono" style="margin:0;font-size:12px;letter-spacing:0.08em;color:rgba(255,255,255,0.6)">9:00 TO 1:45, SHARP · ENDING ON TIME IS THE BRAND</p>
+
+      <div style="display:flex;flex-direction:column;margin-top:36px">
+        <div class="q-row">
+          <span class="q-num">Q0</span>
+          <div><h3>What the hell is happening?</h3><p>The no-judgment opening. The rules of the room, and the last time anyone here needs to pretend.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q1</span>
+          <div><h3>What is AI, how does it work?</h3><p>The strange new hire: total amnesia, confident when wrong, patterns rather than understanding.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q2</span>
+          <div><h3>Meet the employee</h3><p>The one hands-on moment of the day, on your own phone. Ten minutes, then phones away again.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q3</span>
+          <div><h3>What are all these words?</h3><p>Four boxes on the payroll map, and nine vendor words translated into plain language.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q4</span>
+          <div><h3>What can it do? And not, yet?</h3><p>Where the money actually is, rung by rung, function by function. Real wins and real failures.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q5</span>
+          <div><h3>Do I need AI, an agent, or neither?</h3><p>Six questions against your idea. A good gate says no as often as yes.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q6</span>
+          <div><h3>Will it pay?</h3><p>Napkin ROI: band, not number. Then a color on the money: pilot, cheap test, or kill.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q7</span>
+          <div><h3>Am I ready? Do I need a data team?</h3><p>Five dials, scored honestly against one idea. You are not behind; normal is fixable, cheaply.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q8</span>
+          <div><h3>Can I trust it? What about the law?</h3><p>Six exposures on one wheel, and the regulation map at your size. What's law, what's next.</p></div>
+        </div>
+        <div class="q-row">
+          <span class="q-num">Q9</span>
+          <div><h3>Who do I buy from or hire?</h3><p>Real vendor claims, tested live. Seven questions to ask verbatim. How not to get fooled.</p></div>
+        </div>
+        <div class="q-row" style="border-bottom:1px solid rgba(255,255,255,0.16)">
+          <span class="q-num">Q10</span>
+          <div><h3>What do I do Monday?</h3><p>The 90-day sequence, its first three lines written in your handwriting before you stand.</p></div>
+        </div>
+      </div>
+
+      <p style="margin:34px 0 0 0;font-size:16.5px;line-height:1.6;color:#ffffff;max-width:58ch;text-wrap:pretty"><span style="font-weight:600">You bring one AI idea you're considering, or one decision sitting on your desk.</span> <span style="color:#b9c1c6">A vendor pitch counts. You'll drag it through every framework and leave with it stress-tested, on paper, in your hands.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE DECISION FILE (PRINT KIT) ===== -->
+<section id="kit" style="background:#fafbfc;border-top:1px solid #eceef0">
+  <div class="wrap pad">
+    <span class="eyebrow" style="margin-bottom:26px">The take-home kit</span>
+    <h2 style="font-weight:400;font-size:clamp(28px,4vw,48px);line-height:1.12;color:#2b3034;margin:0;max-width:24ch;letter-spacing:-0.02em">Fourteen pieces. <span style="color:#aeb6bb">Not a handout stack, a decision file.</span></h2>
+    <p style="font-size:17px;line-height:1.6;color:#4a5257;margin:18px 0 0 0;max-width:60ch;text-wrap:pretty">Every piece gets filled in against your one idea or decision, in the room. Fifteen frameworks power the day: the master frame plus fourteen numbered tools, all yours to keep.</p>
+    <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
+      <div class="kit-card"><span class="num">01</span><h3>The Idea Card</h3><p>One idea you're considering, or one decision on your desk. It rides with you all day.</p></div>
+      <div class="kit-card"><span class="num">02</span><h3>The Plain-Language AI Map</h3><p>The whole field, one page, no jargon.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 1 · № 2</span></div>
+      <div class="kit-card"><span class="num">02b</span><h3>The AI Transformation Journey</h3><p>Six steps, one loop. The master frame of the day.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 0</span></div>
+      <div class="kit-card"><span class="num">02c</span><h3>The Decoder Ring</h3><p>Nine vendor words, translated to the hire.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 2b</span></div>
+      <div class="kit-card"><span class="num">03 · Signature</span><h3>The 6-Question Card</h3><p>Agent, assistant, automation, or not yet. Your idea, through the gate.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 5</span></div>
+      <div class="kit-card"><span class="num">04</span><h3>The Agent Decision Tree</h3><p>Mark your idea's path. A good gate says no as often as yes.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 5</span></div>
+      <div class="kit-card"><span class="num">05</span><h3>The ROI One-Pager</h3><p>Directional, not decimal. Band, not number.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 7 · № 8</span></div>
+      <div class="kit-card"><span class="num">06</span><h3>The Readiness Checklist</h3><p>Five dials, scored honestly against one idea.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 9</span></div>
+      <div class="kit-card"><span class="num">07</span><h3>The Responsible-AI Checklist</h3><p>Six exposures: ask early, name owners, re-run quarterly.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 10</span></div>
+      <div class="kit-card"><span class="num">08</span><h3>The Regulation Cheat-Sheet</h3><p>What's law, what's next, at your size.</p></div>
+      <div class="kit-card"><span class="num">09</span><h3>The Vendor Scorecard</h3><p>Seven questions, asked verbatim. How not to get fooled.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 11 · № 12</span></div>
+      <div class="kit-card"><span class="num">10</span><h3>The Hiring Guide</h3><p>Your first AI hire: a translator-builder, not a research scientist.</p></div>
+      <div class="kit-card"><span class="num">11</span><h3>The 90-Day Sequence</h3><p>What to do first, second, and not at all.</p><span class="badge">REMAIN RELEVANT™ · FRAMEWORK № 13</span></div>
+      <div class="kit-card"><span class="num">12</span><h3>The Wrap-Up Page</h3><p>Two lines on the day, in your words. The only price of a free session.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHO TEACHES THIS ===== -->
+<section id="teacher" style="background:#ffffff">
+  <div class="wrap" style="padding:clamp(72px,9vw,120px) 32px;display:flex;gap:clamp(32px,5vw,64px);flex-wrap:wrap;align-items:flex-start">
+    <!-- Headshot placeholder · replace with <img src="ritesh.webp" ...> once a clean photo exists -->
+    <div style="width:300px;height:360px;flex-shrink:0;border-radius:16px;background:linear-gradient(152deg,#4c575e 0%,#67727a 100%);display:flex;align-items:center;justify-content:center" aria-label="Ritesh M. Srivastava">
+      <span class="mono" style="font-size:64px;font-weight:500;letter-spacing:0.1em;color:rgba(255,255,255,0.55)">RS</span>
+    </div>
+    <div style="flex:1;min-width:300px">
+      <span class="eyebrow" style="margin-bottom:24px">Who teaches this</span>
+      <h2 style="font-weight:500;font-size:clamp(28px,3.8vw,42px);line-height:1.12;color:#2b3034;margin:0 0 20px 0;letter-spacing:-0.02em">Ritesh M. Srivastava</h2>
+      <p style="font-size:17px;line-height:1.65;color:#4a5257;margin:0 0 32px 0;max-width:58ch;text-wrap:pretty">Seventeen-plus years running enterprise AI and data as an operator, not an advisor. He teaches what he has built, budgeted for, and answered to regulators about.</p>
+      <div style="display:flex;flex-direction:column;border-top:1px solid #e7eaec">
+        <div style="display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e7eaec"><span class="mono" style="font-size:12px;letter-spacing:0.08em;color:#8a9298;padding-top:3px">BHARATPE</span><p style="margin:0;font-size:15px;line-height:1.55;color:#2b3034">Chief Data Officer at the fintech unicorn. Led the company-wide DPDP data-protection transformation; primary data liaison to the RBI.</p></div>
+        <div style="display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e7eaec"><span class="mono" style="font-size:12px;letter-spacing:0.08em;color:#8a9298;padding-top:3px">JINDAL STEEL</span><p style="margin:0;font-size:15px;line-height:1.55;color:#2b3034">Chief AI Officer at Jindal Steel &amp; Power. AI in heavy manufacturing.</p></div>
+        <div style="display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e7eaec"><span class="mono" style="font-size:12px;letter-spacing:0.08em;color:#8a9298;padding-top:3px">NOVARTIS US</span><p style="margin:0;font-size:15px;line-height:1.55;color:#2b3034">Led commercial analytics for a $1.7B budget.</p></div>
+        <div style="display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e7eaec"><span class="mono" style="font-size:12px;letter-spacing:0.08em;color:#8a9298;padding-top:3px">MIT SLOAN</span><p style="margin:0;font-size:15px;line-height:1.55;color:#2b3034">Sloan Fellows MBA candidate.</p></div>
+        <div style="display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e7eaec"><span class="mono" style="font-size:12px;letter-spacing:0.08em;color:#8a9298;padding-top:3px">AUTHOR</span><p style="margin:0;font-size:15px;line-height:1.55;color:#2b3034">Data Decoded and remAIn relevant.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE BOOK ===== -->
+<section style="background:#fafbfc;border-top:1px solid #eceef0">
+  <div class="wrap" style="padding:clamp(56px,7vw,88px) 32px">
+    <div style="background:linear-gradient(135deg,#eef1f2 0%,#f7f8f9 100%);border:1px solid #e7eaec;border-radius:24px;padding:clamp(32px,5vw,56px);display:flex;gap:clamp(28px,4vw,52px);align-items:center;flex-wrap:wrap">
+      <div class="cover"><span style="font-weight:600;font-size:15px;line-height:1.15;letter-spacing:-0.01em">rem<span class="ai">AI</span>n<br>relevant</span></div>
+      <div style="flex:1;min-width:280px">
+        <h2 style="font-weight:500;font-size:clamp(24px,3.2vw,36px);line-height:1.15;color:#2b3034;margin:0 0 14px 0;letter-spacing:-0.02em">Everything in the room is <span style="color:#aeb6bb">the book, live.</span></h2>
+        <p style="font-size:17px;line-height:1.6;color:#4a5257;margin:0 0 22px 0;max-width:52ch;text-wrap:pretty">Written for non-technical leaders who need to speak the language of AI, weigh its ethics, and decide.</p>
+        <a href="#" class="btn-ghost">Get the book →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHO IT'S FOR / NOT FOR ===== -->
+<section style="background:#ffffff;border-top:1px solid #eceef0">
+  <div class="wrap pad">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+      <div style="background:#f5f6f7;border:1px solid #e7eaec;border-radius:20px;padding:clamp(32px,4vw,44px)">
+        <span class="mono" style="font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a9298">This is for you if</span>
+        <div style="display:flex;flex-direction:column;gap:16px;margin-top:24px">
+          <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>You're a non-technical decision-maker: a CEO, an owner, or the executive AI landed on</p>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>Revenue between $10M and $150M</p>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>No internal AI leadership yet</p>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>Ready to bring one AI idea, or one decision sitting on your desk</p>
+        </div>
+      </div>
+      <div style="background:linear-gradient(152deg,#333c42 0%,#4c575e 60%,#66727a 100%);border-radius:20px;padding:clamp(32px,4vw,44px)">
+        <span class="mono" style="font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.7)">This is not for</span>
+        <div style="display:flex;flex-direction:column;gap:16px;margin-top:24px">
+          <p style="margin:0;font-size:17px;line-height:1.5;color:rgba(255,255,255,0.92);display:flex;gap:14px"><span class="mono" style="color:rgba(255,255,255,0.5)">-</span>AI practitioners</p>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:rgba(255,255,255,0.92);display:flex;gap:14px"><span class="mono" style="color:rgba(255,255,255,0.5)">-</span>Vendors</p>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:rgba(255,255,255,0.92);display:flex;gap:14px"><span class="mono" style="color:rgba(255,255,255,0.5)">-</span>Consultants</p>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:rgba(255,255,255,0.92);display:flex;gap:14px"><span class="mono" style="color:rgba(255,255,255,0.5)">-</span>Companies that already have a Chief Data Officer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REQUEST AN INVITATION ===== -->
+<section id="invite" style="background:#fafbfc;border-top:1px solid #eceef0">
+  <div style="max-width:780px;margin:0 auto;padding:clamp(72px,9vw,120px) 32px">
+    <span class="eyebrow" style="margin-bottom:26px">Request an invitation</span>
+    <h2 style="font-weight:400;font-size:clamp(28px,4vw,48px);line-height:1.12;color:#2b3034;margin:0 0 12px 0;letter-spacing:-0.02em">Twelve seats per session. <span style="color:#aeb6bb">Tell us about yourself.</span></h2>
+    <p class="mono" style="font-size:12.5px;letter-spacing:0.08em;color:#8a9298;margin:0 0 44px 0">Free · Invitation-only · 9:00 to 1:45 · Boston</p>
+
+    <form id="inviteForm" style="display:flex;flex-direction:column;gap:22px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px">
+        <label class="stack"><span class="field-label">Name</span><input class="field" name="name" required></label>
+        <label class="stack"><span class="field-label">Company</span><input class="field" name="company" required></label>
+        <label class="stack"><span class="field-label">Role</span><input class="field" name="role" required></label>
+        <label class="stack"><span class="field-label">Revenue band</span><select class="field" name="revenue" required><option value="">Select…</option><option value="10-25">$10M – $25M</option><option value="25-50">$25M – $50M</option><option value="50-100">$50M – $100M</option><option value="100-150">$100M – $150M</option></select></label>
+        <label class="stack"><span class="field-label">Industry</span><input class="field" name="industry" required></label>
+        <label class="stack"><span class="field-label">Email</span><input class="field" name="email" type="email" required></label>
+      </div>
+      <label class="stack"><span class="field-label">The one AI idea you're considering, or the one decision on your desk</span><textarea class="field" name="question" required rows="4" style="resize:vertical"></textarea></label>
+      <button type="submit" class="submit-btn">Request an invitation</button>
+    </form>
+
+    <div id="inviteThanks" style="display:none;background:#ffffff;border:1px solid #e7eaec;border-radius:16px;padding:40px 34px">
+      <p style="font-weight:400;font-size:clamp(20px,2.6vw,26px);line-height:1.4;color:#2b3034;margin:0;letter-spacing:-0.01em">Thank you. <span style="color:#aeb6bb">Invitations go out ~2 weeks before each session.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:#ffffff;border-top:1px solid #eceef0;overflow:hidden">
+  <div class="wrap" style="padding:56px 32px 0 32px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap">
+    <div style="min-width:200px">
+      <p class="mark" style="font-size:11.5px;margin:0 0 16px 0">REM<span class="ai">AI</span>N RELEVANT<sup>™</sup> /</p>
+      <a href="mailto:hello@remainrelevant.ai" class="foot-link">hello@remainrelevant.ai</a>
+    </div>
+    <div style="display:flex;gap:56px;flex-wrap:wrap">
+      <div>
+        <p class="mono" style="font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8a9298;margin:0 0 16px 0">Connect /</p>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <a href="https://www.linkedin.com/" class="foot-link">LinkedIn ↗</a>
+          <a href="mailto:hello@remainrelevant.ai" class="foot-link">Email ↗</a>
+        </div>
+      </div>
+      <div>
+        <p class="mono" style="font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#8a9298;margin:0 0 16px 0">Info /</p>
+        <p style="font-size:15px;color:#6c757b;margin:0;max-width:26ch;line-height:1.5">Free, invitation-only masterclass · 12 seats per session · Boston</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="padding:40px 32px 12px 32px">
+    <span style="font-size:12px;color:#9aa3a8">REMAIN RELEVANT™ is a trademark of Ritesh Mohan Srivastava.</span>
+  </div>
+  <div style="line-height:1.1;padding:16px 14px 26px 14px;text-align:center">
+    <span class="mark" style="display:block;font-size:clamp(12px,6vw,86px);letter-spacing:0.34em">REM<span class="ai">AI</span>N RELEVANT<sup>™</sup></span>
+  </div>
+</footer>
+
+<script>
+  // ===== Invitation form =====
+  // To capture submissions in a Google Sheet: deploy a Google Apps Script web app
+  // (doPost that appends form fields to a Sheet) and paste its /exec URL below.
+  // Leave blank to just show the thank-you confirmation with no backend.
+  const SHEET_ENDPOINT = "";
+
+  const form = document.getElementById('inviteForm');
+  const thanks = document.getElementById('inviteThanks');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    const showThanks = function () {
+      form.style.display = 'none';
+      thanks.style.display = 'block';
+      thanks.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
+    if (SHEET_ENDPOINT) {
+      fetch(SHEET_ENDPOINT, { method: 'POST', mode: 'no-cors', body: new FormData(form) })
+        .then(showThanks)
+        .catch(showThanks);
+    } else {
+      showThanks();
+    }
+  });
+</script>
+</body>
+</html>
