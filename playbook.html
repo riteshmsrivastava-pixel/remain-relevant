@@ -102,7 +102,8 @@ table.plain td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertic
 </div>
 
 <div class="tabs">
-  <button class="tabbtn active" onclick="showTab('tab-agenda', this)">1 · Agenda / Run of Show</button>
+  <button class="tabbtn active" onclick="showTab('tab-flow', this)">0 · Flow v6.1</button>
+  <button class="tabbtn" onclick="showTab('tab-agenda', this)">1 · Agenda / Run of Show</button>
   <button class="tabbtn" onclick="showTab('tab-script', this)">2 · The Script</button>
   <button class="tabbtn" onclick="showTab('tab-bible', this)">3 · Framework Bible</button>
   <button class="tabbtn" onclick="showTab('tab-activities', this)">4 · Activities</button>
@@ -112,7 +113,136 @@ table.plain td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertic
   <button class="tabbtn" onclick="showTab('tab-wrap', this)">8 · Wrap System</button>
 </div>
 
-<div id="tab-agenda" class="tab active">
+<div id="tab-flow" class="tab active">
+
+<span class="pill">Added July 10, 2026 · governs everything below</span>
+<h1>The Flow <span class="dim">· v6.1 · the locked architecture</span></h1>
+<p class="tagline">The agreed restructure from the July 2026 brainstorm rounds. This tab is the constitution: every element below it (agenda, script, deck, activities, kit) gets rebuilt to obey this page in one pass. Until that pass, tabs 1 to 7 still encode the v5 eleven-question flow - that drift is logged in the Bible's sync ledger (B3). Nothing from v5 is deleted: roles change, existence does not.</p>
+
+<div style="display:flex;align-items:center;gap:16px;background:#fdf1ee;border:1px solid #f0c4bb;border-radius:12px;padding:14px 20px;margin-top:18px">
+  <span class="mono" style="font-size:11px;letter-spacing:0.18em;color:var(--red);font-weight:600;white-space:nowrap">ARCHITECTURE&nbsp;FROZEN</span>
+  <p style="font-size:13px;color:var(--ink)">Changes after this point require removing something of equal size. The next version comes from observing real executives in the room, not from another brainstorm document.</p>
+</div>
+
+<h2><span class="n">F0</span> The Emotional Blueprint · the constitution</h2>
+<p class="why">One page, no content, no frameworks. Every artifact must obey it. A reader who sees only this page should be able to tell whether any given minute of the day is doing its job.</p>
+
+<div class="g2">
+  <div class="card"><h3>The design principle</h3><p><b style="color:var(--ink)">Everything in this workshop must reduce the probability of an expensive AI decision.</b> A test, not a slogan - run it against any slide, story, or minute of stage time. If it doesn't reduce expensive decisions, it doesn't earn stage time.</p></div>
+  <div class="card"><h3>The villain · borrowed confidence</h3><p>Making expensive AI decisions on someone else's certainty: the vendor's, the consultant's, the enthusiastic VP's, or the pretended kind. One villain, many costumes: vendor theatre, CNET, the unread agent gate, hallucinated citations. Named once, end of Section 1: <i>"The biggest risk isn't AI. It's making expensive AI decisions with borrowed confidence."</i> It threatens decisions, never people.</p></div>
+  <div class="card"><h3>The promise</h3><p>The product replaces borrowed confidence with <b style="color:var(--ink)">earned confidence</b>. Working line: <b style="color:var(--ink)">"Lead AI decisions with confidence."</b> Understanding is the mechanism, never the objective. Exit states flip: not "can explain AI to their board" but "can defend an AI decision to their board."</p></div>
+  <div class="card"><h3>The ritual</h3><p>Enter uncertain → publicly admit it → acquire a shared language → apply it to a real decision → defend it → commit publicly → leave with a talisman (the Dossier). No-laptops is the threshold moment. Target testimonial: <i>"the day I finally figured out how to think about AI."</i></p></div>
+</div>
+
+<table class="plain" style="margin-top:20px">
+  <tr><th style="width:11%">Minute</th><th style="width:24%">Audience should feel</th><th>Mechanism</th></tr>
+  <tr><td class="mono" style="font-size:11px">0-10</td><td>Curious, off balance</td><td style="color:var(--grey)"><b style="color:var(--red);font-weight:600">PEAK 1</b> · the opening guess ($20M / $2M / $0 - which created value?) → poll → "we are all right, in some way"</td></tr>
+  <tr><td class="mono" style="font-size:11px">10-15</td><td>Oriented</td><td style="color:var(--grey)">The Journey map shown, unexplained · Idea Card written in pencil: "one AI decision you're wrestling with"</td></tr>
+  <tr><td class="mono" style="font-size:11px">15-70</td><td>Relieved, then competent</td><td style="color:var(--grey)">The employee metaphor · three traits · how it works in plain words · why now · the words · "how much do I need to know" · the live demo</td></tr>
+  <tr><td class="mono" style="font-size:11px">70-85</td><td>Alert</td><td style="color:var(--grey)"><b style="color:var(--ink);font-weight:600">Villain named</b> (sighting 1) · Idea Card rewritten in ink · Dossier layer 1 handed</td></tr>
+  <tr><td class="mono" style="font-size:11px">85-145</td><td>Working <span style="color:var(--mid)">(valley by design)</span></td><td style="color:var(--grey)">Ladder · agent gate (sighting 2) · Napkin ROI · cast demands on their idea · coffee inside</td></tr>
+  <tr><td class="mono" style="font-size:11px">145-175</td><td>Fed, recovered</td><td style="color:var(--grey)">Lunch · deliberate valley before the second peak</td></tr>
+  <tr><td class="mono" style="font-size:11px">175-190</td><td>Challenged</td><td style="color:var(--grey)"><b style="color:var(--red);font-weight:600">PEAK 2</b> · the budget debate: automate support vs. internal copilots - vote, argue, reveal</td></tr>
+  <tr><td class="mono" style="font-size:11px">190-235</td><td>Concerned, then honest</td><td style="color:var(--grey)">Readiness · Five Dials heatmap (the protected quiet peak: "we are all amber") · guardrails · Six Exposures (sighting 3)</td></tr>
+  <tr><td class="mono" style="font-size:11px">235-245</td><td>Resolved</td><td style="color:var(--grey)"><b style="color:var(--ink);font-weight:600">The verdict</b> · Go / Cheap test / Not yet · room distribution on the wall · assumptions page: three, circle the scariest</td></tr>
+  <tr><td class="mono" style="font-size:11px">245-275</td><td>Equipped</td><td style="color:var(--grey)">Vendors (sighting 4: real-or-fluff) · build-vs-buy mini-debate · first hire · 90-day sequence</td></tr>
+  <tr><td class="mono" style="font-size:11px">275-285</td><td>Committed</td><td style="color:var(--grey)"><b style="color:var(--red);font-weight:600">PEAK 3</b> · Dossier assembled, cover transcribed · standing declaration: "Monday morning I'm going to..." · applause · the map returns: "now you know why it looks like this"</td></tr>
+</table>
+<p class="why" style="margin-top:8px">Minutes are placeholders until the timing pass. Peaks need valleys - the working stretches and breaks are deliberate recovery. From v6.1 on, every build pass gets two reviews: content accuracy, and whether the narrative holds.</p>
+
+<h2><span class="n">F1</span> The four sections · the employee lifecycle</h2>
+<p class="why">Question-led, in the room's voice, psychologically sequential. Concepts arrive as predicaments from a recurring cast (CFO, GC, CIO, board chair), never as lessons. The metaphor carries ~70%: it owns behavior and trust; it drops - announced out loud - for infrastructure.</p>
+
+<div class="segblock">
+  <div class="seghead"><span class="q">Section 1 · "What exactly am I managing?"</span><span class="t">exit: villain named · card in ink</span></div>
+  <table class="beats">
+    <tr><td class="tt">1.1</td><td class="b">The opening guess - $20M / $2M / $0, vote first, answer later. <span class="g">Hard constraint: must be true; the room Googles at lunch.</span></td></tr>
+    <tr><td class="tt">1.2</td><td class="b">The mirror - pulse poll → "we are all right, in some way" → no-judgment contract → the boo rule.</td></tr>
+    <tr><td class="tt">1.3</td><td class="b">The map + the card - the Journey shown unexplained (bookend, part one); Idea Card in pencil at minute ten: <span class="g">"one AI decision you're currently wrestling with."</span></td></tr>
+    <tr><td class="tt">1.4</td><td class="b">The employee metaphor + the three strange traits.</td></tr>
+    <tr><td class="tt">1.5</td><td class="b">How it works, one level down, inside the metaphor - read/learn/predict/get wrapped · the binder · same engine, three uniforms. <span class="g">"Parameter" stays over the line.</span></td></tr>
+    <tr><td class="tt">1.6</td><td class="b">Why now - fifty years, three changes.</td></tr>
+    <tr><td class="tt">1.7</td><td class="b">The words - Payroll Map + Decoder Ring (map and reference, moved in from old Q3).</td></tr>
+    <tr><td class="tt">1.8</td><td class="b">How much do I need to know? - the floor is smaller than you fear.</td></tr>
+    <tr><td class="tt">1.9</td><td class="b">Meet the employee - the live demo.</td></tr>
+    <tr><td class="tt">1.10</td><td class="b">The villain named · the card rewritten in ink · Dossier layer 1 (Identity) handed · close prompt: <span class="g">"what decision changes Monday because of the last hour?"</span></td></tr>
+  </table>
+</div>
+
+<div class="segblock">
+  <div class="seghead"><span class="q">Section 2 · "Where should I trust this employee?"</span><span class="t">exit: verdict + assumptions</span></div>
+  <table class="beats">
+    <tr><td class="tt">act 1</td><td class="b">The money act - boring money + Salary Map · the Ladder <span class="g">("would you trust this employee to act, or only to draft?")</span> · Morgan Stanley vs. CNET · the can't-do-yet list · agents + the Six Questions gate <span class="g">("would you give this employee access to your ERP?")</span>, Blast-Radius wall moment · Napkin ROI <span class="g">("your CFO asks if this is worth funding - answer on a napkin")</span>. Coffee inside; lunch after.</td></tr>
+    <tr><td class="tt">act 2</td><td class="b">The trust act - PEAK 2, the budget debate, straight after lunch · readiness (no data lake needed · a data team is not an AI team) · Five Dials → the heatmap · guardrails are why the customer lets you drive · Six Exposures <span class="g">("legal just blocked your rollout - which exposure did you fail to name?")</span> · Regulation Cheat-Sheet in two minutes.</td></tr>
+    <tr><td class="tt">2.10</td><td class="b">The verdict - Go / Cheap test / Not yet in green / amber / grey (red retired as a verdict color; grey = parked, not killed) · room distribution on the wall · the assumptions page: three assumptions, circle the scariest · Dossier layer 2 (Decision) handed.</td></tr>
+  </table>
+</div>
+
+<div class="segblock">
+  <div class="seghead"><span class="q">Section 3 · "How do I build a team around this employee?"</span><span class="t">exit: owner with a name</span></div>
+  <table class="beats">
+    <tr><td class="tt">3.1</td><td class="b">Real or fluff - three vendor claims, the room votes (sighting 4: confidence for sale) · Vendor Scorecard: <span class="g">"how not to get fooled, laminated."</span></td></tr>
+    <tr><td class="tt">3.2</td><td class="b">Build vs. buy - the mini-debate.</td></tr>
+    <tr><td class="tt">3.3</td><td class="b">Your first AI hire - the translator-builder · three red flags · the kill question: <span class="g">"tell me about an AI project you killed, and why."</span></td></tr>
+    <tr><td class="tt">3.4</td><td class="b">The operating model - named internal owner → fractional senior → first full-time after two shipped pilots · Dossier layer 3 (Execution) handed.</td></tr>
+  </table>
+</div>
+
+<div class="segblock">
+  <div class="seghead"><span class="q">Section 4 · "What do I do on Monday?"</span><span class="t">exit: public commitment + Dossier</span></div>
+  <table class="beats">
+    <tr><td class="tt">4.1</td><td class="b">The 90-Day Sequence - verdict-aware: a Go gets the full sequence; a Cheap test schedules the test of the circled assumption; a Not yet gets a re-look date.</td></tr>
+    <tr><td class="tt">4.2</td><td class="b">The Dossier assembled - layers 1-4 clipped behind the cover, transcribed by hand in the final minutes: opportunity · verdict color · owner · first meeting date. <span class="g">The cover is the photograph.</span></td></tr>
+    <tr><td class="tt">4.3</td><td class="b">The close - the Later List read aloud once · the book, single mention · PEAK 3: stand, one sentence - <span class="g">"Monday morning I'm going to..."</span> - hand over the signed page, applause · the map returns (bookend, part two).</td></tr>
+    <tr><td class="tt">4.4</td><td class="b">The wrap, upgraded - same-day PDF + wall photo; day 30 asks <span class="g">"did you test the assumption you circled?"</span> and the testimonial probe: "how would you describe the session to a peer?"</td></tr>
+  </table>
+</div>
+
+<h2><span class="n">F2</span> The Dossier · the signature asset</h2>
+<p class="why">The Idea Card, graduated: pencil → ink → layers → cover. Built in layers - one handed at each section close; assembly beats filling. Looks like a board paper; wordmark discreet.</p>
+<table class="plain">
+  <tr><th style="width:18%">Layer</th><th style="width:20%">Handed at</th><th>Evidence it records</th></tr>
+  <tr><td><b style="font-weight:600">1 · Identity</b></td><td>End of Section 1</td><td style="color:var(--grey)">The decision (in ink), the decision-maker, the payroll-map quadrant</td></tr>
+  <tr><td><b style="font-weight:600">2 · Decision</b></td><td>End of Section 2</td><td style="color:var(--grey)">Rung · gate result · payback color · dial scores + cheapest fix · exposure owner · verdict · three assumptions, one circled</td></tr>
+  <tr><td><b style="font-weight:600">3 · Execution</b></td><td>End of Section 3</td><td style="color:var(--grey)">Vendor filter · hire profile · the named owner</td></tr>
+  <tr><td><b style="font-weight:600">4 · Commitment</b></td><td>End of Section 4</td><td style="color:var(--grey)">The 90-day sequence with dates · the Monday sentence, verbatim</td></tr>
+  <tr><td><b style="font-weight:600">Cover</b></td><td>Final minutes</td><td style="color:var(--grey)">Transcribed by hand: opportunity · verdict color · owner · first meeting date. The photograph; the free marketing.</td></tr>
+</table>
+<p class="why" style="margin-top:8px">The assumptions page may be the most valuable page in the pack: executives don't fail from unknown risks, they fail from unquestioned assumptions - and a cheap test is, operationally, an assumption test.</p>
+
+<h2><span class="n">F3</span> The roster · roles, nothing deleted</h2>
+<p class="why">Every entry stays in the day and the kit. Roles: 7 decision frameworks taught hard; maps, references and moments handed over; one thread everything writes on.</p>
+<table class="plain">
+  <tr><th style="width:30%">Entry</th><th style="width:16%">Role</th><th>Note</th></tr>
+  <tr><td>The Journey (№ 0)</td><td class="mono" style="font-size:10.5px;color:var(--green)">BOOKEND</td><td style="color:var(--grey)">Minute five unexplained; paid off at the close</td></tr>
+  <tr><td>Ladder of Delegation · Six Questions · Napkin ROI · Five Dials · Six Exposures · Vendor Scorecard · 90-Day Sequence</td><td class="mono" style="font-size:10.5px;color:var(--green)">FRAMEWORK ×7</td><td style="color:var(--grey)">Each powers a decision the participant makes about their own idea</td></tr>
+  <tr><td>Blast-Radius 2×2</td><td class="mono" style="font-size:10.5px;color:var(--amber)">WALL MOMENT</td><td style="color:var(--grey)">The collective moment of the gate debrief; kit page stays</td></tr>
+  <tr><td>AI Map / Payroll Map · Decoder Ring · Regulation Cheat-Sheet · Hiring Guide</td><td class="mono" style="font-size:10.5px;color:var(--amber)">MAP / REFERENCE</td><td style="color:var(--grey)">Handed over, not scored</td></tr>
+  <tr><td>Idea Card → Dossier</td><td class="mono" style="font-size:10.5px;color:var(--ink)">THREAD</td><td style="color:var(--grey)">The spine, graduated - see F2</td></tr>
+  <tr><td>Assumptions page</td><td class="mono" style="font-size:10.5px;color:var(--red)">NEW</td><td style="color:var(--grey)">Part of Dossier layer 2; the day-30 call asks about the circled one</td></tr>
+  <tr><td>The Executive's Floor</td><td class="mono" style="font-size:10.5px;color:var(--amber)">OPEN</td><td style="color:var(--grey)">Kit page or plain slide in 1.8 - undecided</td></tr>
+</table>
+
+<h2><span class="n">F4</span> Open items · before the one-pass rebuild</h2>
+<table class="plain">
+  <tr><th style="width:8%">#</th><th>Item</th></tr>
+  <tr><td class="mono" style="font-size:11px">E1</td><td style="color:var(--grey)">Final wording of the four section titles</td></tr>
+  <tr><td class="mono" style="font-size:11px">E2</td><td style="color:var(--grey)">Source a true, documented $20M / $2M / $0 triplet for the opening guess - blocks the script pass</td></tr>
+  <tr><td class="mono" style="font-size:11px">E3</td><td style="color:var(--grey)">The 91% stat: reposition after the poll as "you are not alone", or keep as is</td></tr>
+  <tr><td class="mono" style="font-size:11px">E6</td><td style="color:var(--grey)">The Executive's Floor: kit page or plain slide</td></tr>
+  <tr><td class="mono" style="font-size:11px">E7</td><td style="color:var(--grey)">Which grey-pages book example feeds 1.5 (the hidden fine-tuner bit)</td></tr>
+  <tr><td class="mono" style="font-size:11px">E8</td><td style="color:var(--grey)">The timing pass - the hardest open problem; blueprint minutes are placeholders; interaction map rebuilds with it</td></tr>
+  <tr><td class="mono" style="font-size:11px">E10</td><td style="color:var(--grey)">Demo placement - currently closes Section 1, just before the villain</td></tr>
+  <tr><td class="mono" style="font-size:11px">E11</td><td style="color:var(--grey)">The cast: which roles, named or unnamed</td></tr>
+  <tr><td class="mono" style="font-size:11px">E12</td><td style="color:var(--grey)">Dossier physical design: layers + clip vs. folder; paper; wordmark or board-plain cover</td></tr>
+  <tr><td class="mono" style="font-size:11px">E13</td><td style="color:var(--grey)">The two debate scenarios, sourced (budget dilemma · build-vs-buy)</td></tr>
+  <tr><td class="mono" style="font-size:11px">E14</td><td style="color:var(--grey)">Confirm the promise line: "Lead AI decisions with confidence"</td></tr>
+</table>
+<p class="why" style="margin-top:10px">Rebuild order, locked: settle the open items → update the Master Agenda → then script, deck, activities, kit in one pass. Never asset by asset.</p>
+
+</div>
+
+<div id="tab-agenda" class="tab">
 <h1>The Master Agenda <span class="dim">· the operating system of the day</span></h1>
 <p class="tagline"><b style="font-weight:600;color:var(--ink)">The AI Masterclass for non-technical decision-makers. No jargon. No judgment. No laptops.</b><br>Eleven questions, answered in their order. One idea or one decision per attendee, dragged through fourteen frameworks. Doors 8:30, start 9:00 sharp, end 13:45 sharp. Ending on time is the brand.</p>
 
@@ -599,6 +729,7 @@ table.plain td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);vertic
 <h2><span class="n">B3</span> Sync ledger · known drift to fix on the next build pass</h2>
 <table class="plain">
   <tr><th style="width:22%">Document</th><th>Drift vs this Bible</th><th style="width:16%">Fix when</th></tr>
+  <tr><td><b style="font-weight:600">All v5 elements (tabs 1-7)</b></td><td style="color:var(--grey)">Flow v6.1 (tab 0) supersedes the eleven-question architecture: four lifecycle sections, the Emotional Blueprint, the villain (borrowed confidence), the promise flip, the Idea Card at minute ten, the Journey bookend, the Go / Cheap test / Not yet verdict, two debates, the recurring cast, the layered Dossier + assumptions page, the standing commitment. Agenda, script, deck, activities and kit below still encode v5.</td><td class="mono" style="font-size:11px">The one-pass v6.1 rebuild</td></tr>
   <tr><td><b style="font-weight:600">Deck v4</b></td><td style="color:var(--grey)">Lowercase wordmark on all slides · registry slide says "thirteen tools" (now fourteen with №2b) · no Decoder Ring, Why Now, Can't-Do, or Data-Team slides · segment titles not yet the eleven questions · audience copy says "mid-market CEOs" · timings reflect the old 4:25 envelope.</td><td class="mono" style="font-size:11px">Deck v5 build</td></tr>
   <tr><td><b style="font-weight:600">Print kit v2</b></td><td style="color:var(--grey)">Lowercase wordmark · Idea Card single mode (needs dual mode) · no Decoder Ring page · cover says thirteen pieces · Journey, Dials, and Exposures pages carry list visuals, not the canonical diagram shapes · handout times reference the old clock.</td><td class="mono" style="font-size:11px">Kit v3 build</td></tr>
   <tr><td><b style="font-weight:600">Book manuscript</b></td><td style="color:var(--grey)">Uses green/amber/red zones and human-in-the-loop compatibly; does NOT use the framework names or numbers. Decision standing: the book stays unchanged beyond the bridge page. The workshop cites the book, never the reverse.</td><td class="mono" style="font-size:11px">No change</td></tr>
