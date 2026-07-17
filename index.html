@@ -26,9 +26,6 @@
   .mark .ai{color:#d84a37;font-weight:600}
   .mark sup{font-size:50%;letter-spacing:0;vertical-align:super}
 
-  /* Framework badge */
-  .badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#d84a37}
-
   /* Eyebrow pill */
   .eyebrow{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:#8a9298;border:1px solid #dde1e4;border-radius:999px;padding:6px 15px}
 
@@ -85,10 +82,6 @@
   .submit-btn{background:#2b3034;color:#ffffff;font-size:16px;font-weight:600;padding:16px 34px;border:none;border-radius:999px;cursor:pointer;font-family:'Hanken Grotesk',sans-serif;align-self:flex-start;white-space:nowrap;transition:background .18s}
   .submit-btn:hover{background:#4f5a61}
   .submit-btn:disabled{opacity:.6;cursor:default}
-
-  /* Book cover placeholder · the book keeps its own lowercase dress (the one licensed exception) */
-  .cover{width:150px;height:225px;flex-shrink:0;border-radius:6px;box-shadow:0 18px 40px rgba(40,52,62,0.18);background:linear-gradient(155deg,#2b3034 0%,#454f56 60%,#5b666d 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:16px 14px;color:#fff}
-  .cover .ai{color:#d84a37}
 </style>
 </head>
 <body>
@@ -99,7 +92,7 @@
     <a href="#top" class="mark brand">REM<span class="ai">AI</span>N RELEVANT<sup>™</sup></a>
     <div class="nav-links">
       <a href="#masterclass" class="nav-link">The masterclass</a>
-      <a href="#kit" class="nav-link">The decision file</a>
+      <a href="#kit" class="nav-link">The dossier</a>
       <a href="#teacher" class="nav-link">Who teaches</a>
       <a href="#invite" class="nav-cta">Request an invitation</a>
     </div>
@@ -126,9 +119,7 @@
     <div style="display:flex;flex-direction:column;gap:14px">
       <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:0;letter-spacing:-0.01em">Every board meeting now has <span style="color:#aeb6bb">an AI question.</span></p>
       <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:0;letter-spacing:-0.01em">Every vendor <span style="color:#aeb6bb">claims AI.</span></p>
-      <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:0;letter-spacing:-0.01em">Meanwhile your teams are already using it. <span style="color:#aeb6bb">Quietly. With no rules.</span></p>
-      <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:0;letter-spacing:-0.01em">And nobody explains it in plain language, <span style="color:#aeb6bb">or tells you what not to do.</span></p>
-      <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:26px 0 0 0;letter-spacing:-0.01em">The biggest risk isn't AI. <span style="color:#aeb6bb">It's making expensive AI decisions with borrowed confidence: the vendor's, the consultant's, the loudest voice in the room's.</span></p>
+      <p style="font-weight:400;font-size:clamp(20px,2.6vw,30px);line-height:1.25;color:#2b3034;margin:0;letter-spacing:-0.01em">The biggest risk isn't AI. <span style="color:#aeb6bb">It's making expensive AI decisions with borrowed confidence: the vendor's, the consultant's, the loudest voice in the room's.</span></p>
     </div>
     <p class="mono" style="margin:44px 0 0 0;font-size:12.5px;letter-spacing:0.08em;line-height:1.8;color:#8a9298;border-top:1px solid #e7eaec;padding-top:24px;max-width:64ch">91% OF C-SUITE EXECUTIVES ADMIT TO PRETENDING TO KNOW MORE ABOUT AI THAN THEY DO · PLURALSIGHT, 2025</p>
   </div>
@@ -138,8 +129,9 @@
 <section style="background:#fafbfc;border-top:1px solid #eceef0">
   <div class="wrap pad">
     <span class="eyebrow" style="margin-bottom:26px">The promise</span>
-    <h2 style="font-weight:400;font-size:clamp(26px,3.6vw,44px);line-height:1.16;color:#2b3034;margin:0;max-width:30ch;letter-spacing:-0.02em">By the end of the masterclass you will lead AI decisions with confidence: explain them to your board, question a vendor about them, and defend your call. <span style="color:#aeb6bb">Without becoming technical.</span></h2>
-    <p style="font-size:17px;line-height:1.6;color:#4a5257;margin:20px 0 0 0;max-width:60ch;text-wrap:pretty">Understanding is how we get there, not what you're here for. You leave knowing:</p>
+    <h2 style="font-weight:400;font-size:clamp(32px,4.8vw,58px);line-height:1.06;color:#2b3034;margin:0;max-width:20ch;letter-spacing:-0.02em">Lead AI decisions <span style="color:#aeb6bb">with confidence.</span></h2>
+    <p style="font-size:clamp(17px,2vw,20px);line-height:1.6;color:#4a5257;margin:22px 0 0 0;max-width:56ch;text-wrap:pretty">By the end of the masterclass you can explain your call to your board, question a vendor about it, and defend it. Without becoming technical.</p>
+    <p style="font-size:17px;line-height:1.6;color:#4a5257;margin:14px 0 0 0;max-width:60ch;text-wrap:pretty">Understanding is how we get there, not what you're here for. You leave knowing:</p>
     <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border-top:1px solid #e7eaec">
       <div style="padding:24px 28px 24px 0;border-bottom:1px solid #e7eaec;display:flex;gap:18px;align-items:baseline"><span class="mono" style="color:#9aa3a8;font-size:13px">[1]</span><p style="margin:0;font-size:18px;line-height:1.45;color:#2b3034">Whether you actually need it</p></div>
       <div style="padding:24px 28px 24px 0;border-bottom:1px solid #e7eaec;display:flex;gap:18px;align-items:baseline"><span class="mono" style="color:#9aa3a8;font-size:13px">[2]</span><p style="margin:0;font-size:18px;line-height:1.45;color:#2b3034">What it should cost, and whether it will pay</p></div>
@@ -150,7 +142,22 @@
   </div>
 </section>
 
-<!-- ===== THE MASTERCLASS (ELEVEN QUESTIONS) ===== -->
+<!-- ===== TRANSFORMATION STRIP ===== -->
+<section style="background:#ffffff;border-top:1px solid #eceef0">
+  <div class="wrap" style="padding:clamp(40px,5vw,64px) 32px;display:flex;align-items:center;justify-content:center;gap:clamp(28px,5vw,72px);flex-wrap:wrap;text-align:center">
+    <div>
+      <p class="mono" style="font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a9298;margin:0 0 8px 0">You arrive</p>
+      <p style="font-size:clamp(18px,2.2vw,24px);color:#2b3034;margin:0;letter-spacing:-0.01em">Confused by AI</p>
+    </div>
+    <span style="font-size:clamp(20px,2.6vw,30px);color:#c8ced2">→</span>
+    <div>
+      <p class="mono" style="font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a9298;margin:0 0 8px 0">You leave</p>
+      <p style="font-size:clamp(18px,2.2vw,24px);color:#2b3034;margin:0;letter-spacing:-0.01em">Able to defend one AI decision</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE MASTERCLASS (FOUR QUESTIONS) ===== -->
 <section id="masterclass" style="background:#ffffff">
   <div class="wrap pad">
     <div style="background:linear-gradient(152deg,#333c42 0%,#4c575e 58%,#67727a 100%);border-radius:24px;padding:clamp(40px,6vw,72px)">
@@ -165,7 +172,7 @@
         </div>
         <div class="q-row">
           <span class="q-num">02</span>
-          <div><h3>Where should I trust this employee?</h3><p>One continuous decision, made on your own idea: which rung of delegation, through the agent gate, priced on a napkin, scored on five readiness dials, checked against six exposures. It ends in a verdict: go, cheap test, or not yet.</p></div>
+          <div><h3>Where should I trust this employee?</h3><p>You'll run one real decision through every framework until it reaches a verdict: go, cheap test, or not yet.</p></div>
         </div>
         <div class="q-row">
           <span class="q-num">03</span>
@@ -173,7 +180,7 @@
         </div>
         <div class="q-row" style="border-bottom:1px solid rgba(255,255,255,0.16)">
           <span class="q-num">04</span>
-          <div><h3>What do I do on Monday?</h3><p>The 90-day sequence in your own handwriting, your decision dossier assembled, and one sentence said standing up, out loud. Public commitments get kept.</p></div>
+          <div><h3>What do I do on Monday?</h3><p>The 90-day sequence in your own handwriting, your Decision Dossier assembled, and one commitment spoken out loud. Commitments said aloud are far more likely to become action. That's why we end standing up.</p></div>
         </div>
       </div>
 
@@ -186,25 +193,25 @@
 <section id="kit" style="background:#fafbfc;border-top:1px solid #eceef0">
   <div class="wrap pad">
     <span class="eyebrow" style="margin-bottom:26px">The take-home kit</span>
-    <h2 style="font-weight:400;font-size:clamp(28px,4vw,48px);line-height:1.12;color:#2b3034;margin:0;max-width:24ch;letter-spacing:-0.02em">14 building blocks.<br><span style="color:#aeb6bb">Not a handout stack, a decision file.</span></h2>
-    <p style="font-size:17px;line-height:1.6;color:#4a5257;margin:18px 0 0 0;max-width:60ch;text-wrap:pretty">Every block gets filled in against your one idea or decision, in the room, powered by the REMAIN RELEVANT™ frameworks. All yours to keep - and they assemble behind one board-ready cover: <span style="font-weight:600;color:#2b3034">the AI Decision Dossier.</span> Opportunity, verdict, owner, first meeting date, and the one assumption you most need to test. One page a board would review.</p>
+    <h2 style="font-weight:400;font-size:clamp(28px,4vw,48px);line-height:1.12;color:#2b3034;margin:0;max-width:24ch;letter-spacing:-0.02em">Leave with your own AI Decision Dossier.<br><span style="color:#aeb6bb">Assembled from fourteen working pages.</span></h2>
+    <p style="font-size:17px;line-height:1.6;color:#4a5257;margin:18px 0 0 0;max-width:60ch;text-wrap:pretty">Every page gets filled in against your one decision, in the room, and they assemble behind one board-ready cover: opportunity, verdict, owner, first meeting date, and the one assumption you most need to test. One page a board would review. All yours to keep.</p>
     <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
       <div class="kit-card"><span class="num">01 / 14</span><h3>The Idea Card</h3><p>One idea you're considering, or one decision on your desk. It rides with you all day.</p></div>
-      <div class="kit-card"><span class="num">02 / 14</span><h3>The Plain-Language AI Map</h3><p>The whole field, one page, no jargon.</p><span class="badge">FRAMEWORK 1</span></div>
-      <div class="kit-card"><span class="num">03 / 14</span><h3>The AI Transformation Journey</h3><p>Six steps, one loop. The master frame of the day.</p><span class="badge">FRAMEWORK 2</span></div>
-      <div class="kit-card"><span class="num">04 / 14</span><h3>The Decoder Ring</h3><p>Nine vendor words, translated to the hire.</p><span class="badge">FRAMEWORK 3</span></div>
-      <div class="kit-card"><span class="num">05 / 14 · Signature</span><h3>The 6-Question Card</h3><p>Agent, assistant, automation, or not yet. Your idea, through the gate.</p><span class="badge">FRAMEWORK 4</span></div>
-      <div class="kit-card"><span class="num">06 / 14</span><h3>The Agent Decision Tree</h3><p>Mark your idea's path. A good gate says no as often as yes.</p><span class="badge">FRAMEWORK 5</span></div>
-      <div class="kit-card"><span class="num">07 / 14</span><h3>The ROI One-Pager</h3><p>Directional, not decimal. Band, not number.</p><span class="badge">FRAMEWORK 6</span></div>
-      <div class="kit-card"><span class="num">08 / 14</span><h3>The Readiness Checklist</h3><p>Five dials, scored honestly against one idea.</p><span class="badge">FRAMEWORK 7</span></div>
-      <div class="kit-card"><span class="num">09 / 14</span><h3>The Responsible-AI Checklist</h3><p>Six exposures: ask early, name owners, re-run quarterly.</p><span class="badge">FRAMEWORK 8</span></div>
+      <div class="kit-card"><span class="num">02 / 14</span><h3>The Plain-Language AI Map</h3><p>The whole field, one page, no jargon.</p></div>
+      <div class="kit-card"><span class="num">03 / 14</span><h3>The AI Transformation Journey</h3><p>Six steps, one loop. The master frame of the day.</p></div>
+      <div class="kit-card"><span class="num">04 / 14</span><h3>The Decoder Ring</h3><p>Nine vendor words, translated to the hire.</p></div>
+      <div class="kit-card"><span class="num">05 / 14 · Signature</span><h3>The 6-Question Card</h3><p>Agent, assistant, automation, or not yet. Your idea, through the gate.</p></div>
+      <div class="kit-card"><span class="num">06 / 14</span><h3>The Agent Decision Tree</h3><p>Mark your idea's path. A good gate says no as often as yes.</p></div>
+      <div class="kit-card"><span class="num">07 / 14</span><h3>The ROI One-Pager</h3><p>Directional, not decimal. Band, not number.</p></div>
+      <div class="kit-card"><span class="num">08 / 14</span><h3>The Readiness Checklist</h3><p>Five dials, scored honestly against one idea.</p></div>
+      <div class="kit-card"><span class="num">09 / 14</span><h3>The Responsible-AI Checklist</h3><p>Six exposures: ask early, name owners, re-run quarterly.</p></div>
       <div class="kit-card"><span class="num">10 / 14</span><h3>The Regulation Cheat-Sheet</h3><p>What's law, what's next, at your size.</p></div>
-      <div class="kit-card"><span class="num">11 / 14</span><h3>The Vendor Scorecard</h3><p>Seven questions, asked verbatim. How not to get fooled.</p><span class="badge">FRAMEWORK 9</span></div>
+      <div class="kit-card"><span class="num">11 / 14</span><h3>The Vendor Scorecard</h3><p>Seven questions, asked verbatim. How not to get fooled.</p></div>
       <div class="kit-card"><span class="num">12 / 14</span><h3>The Hiring Guide</h3><p>Your first AI hire: a translator-builder, not a research scientist.</p></div>
-      <div class="kit-card"><span class="num">13 / 14</span><h3>The 90-Day Sequence</h3><p>What to do first, second, and not at all.</p><span class="badge">FRAMEWORK 10</span></div>
+      <div class="kit-card"><span class="num">13 / 14</span><h3>The 90-Day Sequence</h3><p>What to do first, second, and not at all.</p></div>
       <div class="kit-card"><span class="num">14 / 14</span><h3>The Wrap-Up Page</h3><p>Two lines on the day, in your words. The only price of a free session.</p></div>
     </div>
-    <p style="font-size:15px;line-height:1.6;color:#6c757b;margin:28px 0 0 0;max-width:64ch;text-wrap:pretty">Ten frameworks leave with you in this kit. Two more, the Ladder of Delegation and the Salary Map, you meet only in the room.</p>
+    <p style="font-size:15px;line-height:1.6;color:#6c757b;margin:28px 0 0 0;max-width:64ch;text-wrap:pretty">Two of the frameworks, the Ladder of Delegation and the Salary Map, you meet only in the room.</p>
   </div>
 </section>
 
@@ -215,7 +222,7 @@
     <div style="flex:1;min-width:300px">
       <span class="eyebrow" style="margin-bottom:24px">Who teaches this</span>
       <h2 style="font-weight:500;font-size:clamp(28px,3.8vw,42px);line-height:1.12;color:#2b3034;margin:0 0 20px 0;letter-spacing:-0.02em">Ritesh M. Srivastava</h2>
-      <p style="font-size:17px;line-height:1.65;color:#4a5257;margin:0 0 32px 0;max-width:58ch;text-wrap:pretty">Seventeen-plus years running enterprise AI and data as an operator, not a commentator. He teaches what he has built, budgeted for, and answered to regulators about.</p>
+      <p style="font-size:17px;line-height:1.65;color:#4a5257;margin:0 0 32px 0;max-width:58ch;text-wrap:pretty">Seventeen-plus years running enterprise AI and data. He teaches what he has built, budgeted for, and answered to regulators about.</p>
       <div style="display:flex;flex-direction:column;border-top:1px solid #e7eaec">
         <div style="display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e7eaec"><span class="mono" style="font-size:12px;letter-spacing:0.08em;color:#8a9298;padding-top:3px">BHARATPE</span><p style="margin:0;font-size:15px;line-height:1.55;color:#2b3034">Chief Data Officer at the fintech unicorn. Led the company-wide DPDP data-protection transformation; primary data liaison to the RBI.</p></div>
         <div style="display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e7eaec"><span class="mono" style="font-size:12px;letter-spacing:0.08em;color:#8a9298;padding-top:3px">JINDAL STEEL</span><p style="margin:0;font-size:15px;line-height:1.55;color:#2b3034">Chief AI Officer at Jindal Steel &amp; Power. AI in heavy manufacturing.</p></div>
@@ -225,20 +232,6 @@
         <div style="display:grid;grid-template-columns:minmax(120px,180px) 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e7eaec"><span class="mono" style="font-size:12px;letter-spacing:0.08em;color:#8a9298;padding-top:3px">AUTHOR</span><p style="margin:0;font-size:15px;line-height:1.55;color:#2b3034">Data Decoded and remAIn relevant.</p></div>
       </div>
       <p class="mono" style="font-size:11px;letter-spacing:0.08em;color:#8a9298;margin:20px 0 0 0;line-height:1.8">AIM 40-UNDER-40 DATA SCIENTISTS · TOP 100 ANALYTICS LEADERS APAC · AI CHANGEMAKER OF THE YEAR</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== THE BOOK ===== -->
-<section style="background:#fafbfc;border-top:1px solid #eceef0">
-  <div class="wrap" style="padding:clamp(56px,7vw,88px) 32px">
-    <div style="background:linear-gradient(135deg,#eef1f2 0%,#f7f8f9 100%);border:1px solid #e7eaec;border-radius:24px;padding:clamp(32px,5vw,56px);display:flex;gap:clamp(28px,4vw,52px);align-items:center;flex-wrap:wrap">
-      <div class="cover"><span style="font-weight:600;font-size:15px;line-height:1.15;letter-spacing:-0.01em">rem<span class="ai">AI</span>n<br>relevant</span></div>
-      <div style="flex:1;min-width:280px">
-        <h2 style="font-weight:500;font-size:clamp(24px,3.2vw,36px);line-height:1.15;color:#2b3034;margin:0 0 14px 0;letter-spacing:-0.02em">Everything in the room is <span style="color:#aeb6bb">the book, live.</span></h2>
-        <p style="font-size:17px;line-height:1.6;color:#4a5257;margin:0 0 22px 0;max-width:52ch;text-wrap:pretty">Written for non-technical leaders who need to speak the language of AI, weigh its ethics, and decide.</p>
-        <a href="#" class="btn-ghost">Get the book →</a>
-      </div>
     </div>
   </div>
 </section>
@@ -261,7 +254,7 @@
         <span class="mono" style="font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase;color:#8a9298">This is for you if</span>
         <div style="display:flex;flex-direction:column;gap:16px;margin-top:24px">
           <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>You're a non-technical decision-maker: a CEO, an owner, a CFO, an HR or ops leader, or the executive AI landed on</p>
-          <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>Your company runs real revenue: $1M and up</p>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>The AI decision in front of you has real money behind it</p>
           <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>No internal AI leadership yet</p>
           <p style="margin:0;font-size:17px;line-height:1.5;color:#2b3034;display:flex;gap:14px"><span class="mono" style="color:#9aa3a8">+</span>Ready to bring one AI idea, or one decision sitting on your desk</p>
         </div>
@@ -291,11 +284,9 @@
         <label class="stack"><span class="field-label">Name</span><input class="field" name="name" required></label>
         <label class="stack"><span class="field-label">Company</span><input class="field" name="company" required></label>
         <label class="stack"><span class="field-label">Role</span><input class="field" name="role" required></label>
-        <label class="stack"><span class="field-label">Revenue band</span><select class="field" name="revenue" required><option value="">Select…</option><option value="1-10">$1M – $10M</option><option value="10-25">$10M – $25M</option><option value="25-50">$25M – $50M</option><option value="50-100">$50M – $100M</option><option value="100+">$100M+</option></select></label>
-        <label class="stack"><span class="field-label">Industry</span><input class="field" name="industry" required></label>
         <label class="stack"><span class="field-label">Email</span><input class="field" name="email" type="email" required></label>
       </div>
-      <label class="stack"><span class="field-label">The one AI idea you're considering, or the one decision on your desk</span><textarea class="field" name="question" required rows="4" style="resize:vertical"></textarea></label>
+      <label class="stack"><span class="field-label">The AI decision you're wrestling with</span><textarea class="field" name="question" required rows="4" style="resize:vertical"></textarea></label>
       <button type="submit" class="submit-btn">Request an invitation</button>
       <p style="font-size:14.5px;line-height:1.6;color:#6c757b;margin:2px 0 0 0;max-width:56ch;text-wrap:pretty">Every request gets a personal reply within 48 hours. If this room isn't right for you, I'll say so, and point you somewhere better.</p>
     </form>
